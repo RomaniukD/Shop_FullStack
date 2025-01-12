@@ -6,7 +6,7 @@ import { Card, Row } from 'react-bootstrap';
 const BrandBar = observer(() => {
     const {device} = useContext(Context)
     return (
-        <Row className="d-flex flex-row flex-wrap justify-content-start">
+        <Row className="row m-2 mt-4" >
             {device.brands.map(brand => 
                 <Card
                     style={{cursor: 'pointer'}}
